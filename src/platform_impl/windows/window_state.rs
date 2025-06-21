@@ -187,7 +187,7 @@ impl WindowState {
   }
 
   pub fn has_active_focus(&self) -> bool {
-    self.is_active && self.is_focused
+    self.is_active || self.is_focused
   }
 
   // Updates is_active and returns whether active-focus state has changed
